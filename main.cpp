@@ -1,5 +1,11 @@
-#include <iostream>
+#include <ncurses.h>
 
 int main() {
-    std::cout << "Hey" << '\n';
+    initscr();
+
+    printw("Hi");
+    refresh();
+    getch();
+
+    endwin();
 }
